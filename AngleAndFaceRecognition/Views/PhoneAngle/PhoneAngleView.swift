@@ -39,6 +39,9 @@ struct PhoneAngleView: View {
             .navigationTitle("Angle Placement")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
+                if faceDetectionViewActive {
+                    viewModel.subscribeToFaceRecognitionUpdates()
+                }
                 viewModel.startMotionUpdates()
             }
             .onDisappear {
@@ -60,8 +63,6 @@ private extension PhoneAngleView {
             Text(subTitle)
                 .font(.caption)
                 .multilineTextAlignment(.center)
-                .opacity(subTitle == "" ? 0 : 1)
-                .animation(.easeInOut)
             
             highAngleAnimation()
         }
@@ -151,7 +152,7 @@ private extension PhoneAngleView {
                 }
             }
             .onReceive(viewModel.$faceRecognitionUpdates) { output in
-                buttonEnabled = output
+                buttonEnabled = output && viewModel.navigationState == .faceDetection
             }
     }
     
