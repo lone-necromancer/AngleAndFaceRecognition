@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B50452182A35529900DD7C71 /* AngleAndFaceRecognitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452172A35529900DD7C71 /* AngleAndFaceRecognitionApp.swift */; };
-		B504521A2A35529900DD7C71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452192A35529900DD7C71 /* ContentView.swift */; };
+		B504521A2A35529900DD7C71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452192A35529900DD7C71 /* MainView.swift */; };
 		B504521C2A35529A00DD7C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B504521B2A35529A00DD7C71 /* Assets.xcassets */; };
 		B504521F2A35529A00DD7C71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B504521E2A35529A00DD7C71 /* Preview Assets.xcassets */; };
-		B50452292A35529B00DD7C71 /* AngleAndFaceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452282A35529B00DD7C71 /* AngleAndFaceRecognitionTests.swift */; };
 		B50452332A35529B00DD7C71 /* AngleAndFaceRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452322A35529B00DD7C71 /* AngleAndFaceRecognitionUITests.swift */; };
 		B50452352A35529B00DD7C71 /* AngleAndFaceRecognitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50452342A35529B00DD7C71 /* AngleAndFaceRecognitionUITestsLaunchTests.swift */; };
+		B59B326E2A35549900595FC2 /* PhoneAngleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B326D2A35549900595FC2 /* PhoneAngleView.swift */; };
+		B59B32722A3554C100595FC2 /* PhoneAngleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32712A3554C100595FC2 /* PhoneAngleViewModel.swift */; };
+		B59B32742A3554CE00595FC2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32732A3554CE00595FC2 /* MainViewModel.swift */; };
+		B59B32772A3556A000595FC2 /* ButtonStyle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32762A3556A000595FC2 /* ButtonStyle+Additions.swift */; };
+		B59B327B2A35687F00595FC2 /* MotionManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B327A2A35687F00595FC2 /* MotionManagerWrapper.swift */; };
+		B59B327F2A36A1B300595FC2 /* StartTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B327E2A36A1B300595FC2 /* StartTestViewModel.swift */; };
+		B59B32812A36A1BB00595FC2 /* StartTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32802A36A1BB00595FC2 /* StartTestView.swift */; };
+		B59B32832A36A6CF00595FC2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32822A36A6CF00595FC2 /* CameraView.swift */; };
+		B59B32852A36A90600595FC2 /* FaceRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32842A36A90600595FC2 /* FaceRecognitionService.swift */; };
+		B59B32892A37EB3700595FC2 /* MotionManagerWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B32882A37EB3700595FC2 /* MotionManagerWrapperMock.swift */; };
+		B59B328B2A37EE1E00595FC2 /* FaceRecognitionServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B328A2A37EE1E00595FC2 /* FaceRecognitionServiceMock.swift */; };
+		B59B328D2A37EF0400595FC2 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B328C2A37EF0400595FC2 /* MainViewModelTests.swift */; };
+		B59B328F2A37FA1A00595FC2 /* PhoneAngleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B328E2A37FA1A00595FC2 /* PhoneAngleViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +48,27 @@
 /* Begin PBXFileReference section */
 		B50452142A35529900DD7C71 /* AngleAndFaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleAndFaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50452172A35529900DD7C71 /* AngleAndFaceRecognitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleAndFaceRecognitionApp.swift; sourceTree = "<group>"; };
-		B50452192A35529900DD7C71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B50452192A35529900DD7C71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B504521B2A35529A00DD7C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B504521E2A35529A00DD7C71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B50452242A35529B00DD7C71 /* AngleAndFaceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleAndFaceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B50452282A35529B00DD7C71 /* AngleAndFaceRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleAndFaceRecognitionTests.swift; sourceTree = "<group>"; };
 		B504522E2A35529B00DD7C71 /* AngleAndFaceRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleAndFaceRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50452322A35529B00DD7C71 /* AngleAndFaceRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleAndFaceRecognitionUITests.swift; sourceTree = "<group>"; };
 		B50452342A35529B00DD7C71 /* AngleAndFaceRecognitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleAndFaceRecognitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B59B326D2A35549900595FC2 /* PhoneAngleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAngleView.swift; sourceTree = "<group>"; };
+		B59B32712A3554C100595FC2 /* PhoneAngleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAngleViewModel.swift; sourceTree = "<group>"; };
+		B59B32732A3554CE00595FC2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B59B32762A3556A000595FC2 /* ButtonStyle+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Additions.swift"; sourceTree = "<group>"; };
+		B59B327A2A35687F00595FC2 /* MotionManagerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerWrapper.swift; sourceTree = "<group>"; };
+		B59B327E2A36A1B300595FC2 /* StartTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestViewModel.swift; sourceTree = "<group>"; };
+		B59B32802A36A1BB00595FC2 /* StartTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestView.swift; sourceTree = "<group>"; };
+		B59B32822A36A6CF00595FC2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B59B32842A36A90600595FC2 /* FaceRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionService.swift; sourceTree = "<group>"; };
+		B59B32862A36B39A00595FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B59B32882A37EB3700595FC2 /* MotionManagerWrapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerWrapperMock.swift; sourceTree = "<group>"; };
+		B59B328A2A37EE1E00595FC2 /* FaceRecognitionServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionServiceMock.swift; sourceTree = "<group>"; };
+		B59B328C2A37EF0400595FC2 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		B59B328E2A37FA1A00595FC2 /* PhoneAngleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAngleViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +119,10 @@
 		B50452162A35529900DD7C71 /* AngleAndFaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				B59B32862A36B39A00595FC2 /* Info.plist */,
+				B59B327D2A36A18E00595FC2 /* Views */,
+				B59B32782A355AAD00595FC2 /* Dependencies */,
 				B50452172A35529900DD7C71 /* AngleAndFaceRecognitionApp.swift */,
-				B50452192A35529900DD7C71 /* ContentView.swift */,
 				B504521B2A35529A00DD7C71 /* Assets.xcassets */,
 				B504521D2A35529A00DD7C71 /* Preview Content */,
 			);
@@ -113,7 +140,9 @@
 		B50452272A35529B00DD7C71 /* AngleAndFaceRecognitionTests */ = {
 			isa = PBXGroup;
 			children = (
-				B50452282A35529B00DD7C71 /* AngleAndFaceRecognitionTests.swift */,
+				B59B32872A37EB1D00595FC2 /* Mocks */,
+				B59B328C2A37EF0400595FC2 /* MainViewModelTests.swift */,
+				B59B328E2A37FA1A00595FC2 /* PhoneAngleViewModelTests.swift */,
 			);
 			path = AngleAndFaceRecognitionTests;
 			sourceTree = "<group>";
@@ -125,6 +154,79 @@
 				B50452342A35529B00DD7C71 /* AngleAndFaceRecognitionUITestsLaunchTests.swift */,
 			);
 			path = AngleAndFaceRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		B59B326F2A35549C00595FC2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B50452192A35529900DD7C71 /* MainView.swift */,
+				B59B32732A3554CE00595FC2 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B59B32702A3554A900595FC2 /* PhoneAngle */ = {
+			isa = PBXGroup;
+			children = (
+				B59B326D2A35549900595FC2 /* PhoneAngleView.swift */,
+				B59B32712A3554C100595FC2 /* PhoneAngleViewModel.swift */,
+			);
+			path = PhoneAngle;
+			sourceTree = "<group>";
+		};
+		B59B32752A35568100595FC2 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				B59B32762A3556A000595FC2 /* ButtonStyle+Additions.swift */,
+				B59B32822A36A6CF00595FC2 /* CameraView.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		B59B32782A355AAD00595FC2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B59B32792A355ABA00595FC2 /* Wrappers */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		B59B32792A355ABA00595FC2 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				B59B32842A36A90600595FC2 /* FaceRecognitionService.swift */,
+				B59B327A2A35687F00595FC2 /* MotionManagerWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		B59B327C2A36A18700595FC2 /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				B59B327E2A36A1B300595FC2 /* StartTestViewModel.swift */,
+				B59B32802A36A1BB00595FC2 /* StartTestView.swift */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		B59B327D2A36A18E00595FC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B59B32752A35568100595FC2 /* SupportingViews */,
+				B59B326F2A35549C00595FC2 /* Main */,
+				B59B32702A3554A900595FC2 /* PhoneAngle */,
+				B59B327C2A36A18700595FC2 /* FaceDetection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B59B32872A37EB1D00595FC2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B59B32882A37EB3700595FC2 /* MotionManagerWrapperMock.swift */,
+				B59B328A2A37EE1E00595FC2 /* FaceRecognitionServiceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B504521A2A35529900DD7C71 /* ContentView.swift in Sources */,
+				B59B32742A3554CE00595FC2 /* MainViewModel.swift in Sources */,
+				B59B327F2A36A1B300595FC2 /* StartTestViewModel.swift in Sources */,
+				B59B32812A36A1BB00595FC2 /* StartTestView.swift in Sources */,
+				B59B32832A36A6CF00595FC2 /* CameraView.swift in Sources */,
+				B59B32852A36A90600595FC2 /* FaceRecognitionService.swift in Sources */,
+				B504521A2A35529900DD7C71 /* MainView.swift in Sources */,
+				B59B32722A3554C100595FC2 /* PhoneAngleViewModel.swift in Sources */,
+				B59B327B2A35687F00595FC2 /* MotionManagerWrapper.swift in Sources */,
+				B59B32772A3556A000595FC2 /* ButtonStyle+Additions.swift in Sources */,
 				B50452182A35529900DD7C71 /* AngleAndFaceRecognitionApp.swift in Sources */,
+				B59B326E2A35549900595FC2 /* PhoneAngleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50452292A35529B00DD7C71 /* AngleAndFaceRecognitionTests.swift in Sources */,
+				B59B328B2A37EE1E00595FC2 /* FaceRecognitionServiceMock.swift in Sources */,
+				B59B328F2A37FA1A00595FC2 /* PhoneAngleViewModelTests.swift in Sources */,
+				B59B32892A37EB3700595FC2 /* MotionManagerWrapperMock.swift in Sources */,
+				B59B328D2A37EF0400595FC2 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,6 +534,8 @@
 				DEVELOPMENT_TEAM = J992S8KRJN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngleAndFaceRecognition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to access your camera in order to procceed with the test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +565,8 @@
 				DEVELOPMENT_TEAM = J992S8KRJN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngleAndFaceRecognition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to access your camera in order to procceed with the test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
